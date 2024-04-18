@@ -1,4 +1,4 @@
-# Cái gì mà nhà môi giới muỗi MQTT :)))
+# MQTT-BROKER
 ## Cài đặt Mosquitto MQTT Broker trên linux
 Thêm gói [mosquitto-dev ](https://launchpad.net/~mosquitto-dev/+archive/ubuntu/mosquitto-ppa):
 
@@ -108,6 +108,10 @@ listener 1883
 allow_anonymous false
 password_file file path
 ````
+Kết quả chúng ta có được một MQTT broker có xác thực bằng Username và Password. Tuy nhiên lúc này các gới tin chưa được mã hóa trên đường truyền, các bản tin có thể dễ dàng được nhìn thấy như thế này:
+
+![username-passwords](https://github.com/Specanik/MQTT-BROKER/assets/101632986/129b56be-11e5-4fbc-adcd-518d5cfb18bc)
+
 
 
 #### Authentication plugins: [Dynamic Security Plugin](https://mosquitto.org/documentation/dynamic-security/)
